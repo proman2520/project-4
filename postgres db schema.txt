@@ -1,0 +1,48 @@
+CREATE TABLE movies (
+    movieId INT PRIMARY KEY,
+    title VARCHAR(1024),
+    released_year INT,
+    genre_1 VARCHAR(255),
+    genre_2 VARCHAR(255),
+    genre_3 VARCHAR(255),
+    genre_4 VARCHAR(255),
+    genre_5 VARCHAR(255),
+    genre_6 VARCHAR(255),
+    genre_7 VARCHAR(255),
+    genre_8 VARCHAR(255),
+    genre_9 VARCHAR(255),
+    genre_10 VARCHAR(255)
+);
+
+drop table movies;
+
+CREATE TABLE ratings (
+    userId INT,
+    movieId INT,
+    rating VARCHAR(24),
+	timestamp VARCHAR(128),
+	PRIMARY KEY (userId, movieId),
+	FOREIGN KEY (movieId) REFERENCES movies(movieId)
+);
+
+drop table ratings;
+
+CREATE TABLE tags (
+    userId INT,
+    movieId INT,
+    tag VARCHAR(1024),
+	timestamp VARCHAR(128),
+	PRIMARY KEY (userId, movieId, tag),
+	FOREIGN KEY (movieId) REFERENCES movies(movieId)
+);
+
+drop table tags;
+
+CREATE TABLE links (
+	movieId INT PRIMARY KEY,
+	imdbId VARCHAR(128),
+	tmdbId VARCHAR(128),
+	FOREIGN KEY (movieId) REFERENCES movies(movieId)
+);
+
+drop table links;
