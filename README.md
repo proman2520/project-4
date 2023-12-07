@@ -8,3 +8,4 @@
 References: 
 https://grouplens.org/datasets/movielens/
 https://movielens.org/
+Postgres split single row into multiple rows - https://stackoverflow.com/questions/64682738/postgres-split-single-row-into-multiple-rows
