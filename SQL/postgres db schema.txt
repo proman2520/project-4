@@ -46,3 +46,10 @@ CREATE TABLE links (
 );
 
 drop table links;
+
+CREATE TABLE users (
+	userid INT PRIMARY KEY,
+	user_name VARCHAR(128)
+);
+
+drop table users;
