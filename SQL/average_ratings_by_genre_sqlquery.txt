@@ -1,0 +1,48 @@
+with movie_genres as (
+select distinct
+genre_1 as genre, movieid
+from movies
+UNION
+select distinct
+genre_2 as genre, movieid
+from movies
+UNION
+select distinct
+genre_3 as genre, movieid
+from movies
+UNION
+select distinct
+genre_4 as genre, movieid
+from movies
+UNION
+select distinct
+genre_5 as genre, movieid
+from movies
+UNION
+select distinct
+genre_6 as genre, movieid
+from movies
+UNION
+select distinct
+genre_7 as genre, movieid
+from movies
+UNION
+select distinct
+genre_8 as genre, movieid
+from movies
+UNION
+select distinct
+genre_9 as genre, movieid
+from movies
+UNION
+select distinct
+genre_10 as genre, movieid
+from movies
+)
+select
+mg.genre, round(avg(r.rating::numeric),3) as average_rating from ratings r
+join movie_genres mg
+on mg.movieid = r.movieid
+where mg.genre is not null
+group by mg.genre
+order by 2 desc

@@ -1,0 +1,21 @@
+select r.userid, usr.user_name, r.rating, --r.timestamp, 
+TO_CHAR(DATE(TO_TIMESTAMP(r.timestamp::numeric)), 'MM/DD/YYYY') AS rating_date, x.*
+from movies mov
+join ratings r
+on r.movieid = mov.movieid
+join users usr
+on usr.userid = r.userid
+cross join lateral (values
+    (mov.movieid, mov.title, mov.released_year, mov.genre_1),
+    (mov.movieid, mov.title, mov.released_year, mov.genre_2),
+    (mov.movieid, mov.title, mov.released_year, mov.genre_3),
+	(mov.movieid, mov.title, mov.released_year, mov.genre_4),
+	(mov.movieid, mov.title, mov.released_year, mov.genre_5),
+	(mov.movieid, mov.title, mov.released_year, mov.genre_6),
+	(mov.movieid, mov.title, mov.released_year, mov.genre_7),
+	(mov.movieid, mov.title, mov.released_year, mov.genre_8),
+	(mov.movieid, mov.title, mov.released_year, mov.genre_9),
+	(mov.movieid, mov.title, mov.released_year, mov.genre_10)
+) as x(movieid, title, released_year, genres)
+where x.genres is not null
+order by r.userid, r.rating, mov.title, mov.movieid, x.genres
