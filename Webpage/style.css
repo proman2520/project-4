@@ -32,6 +32,27 @@ td, th {
     padding: 20px;
 }
 
+nav {
+    background-color: #333; /* Background color of the navigation bar */
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Style for the navigation bar links */
+nav a {
+    display: inline-block; /* Make the links block-level elements for better styling */
+    color: white; /* Text color */
+    text-align: center; /* Center-align the text within each link */
+    padding: 14px 16px; /* Padding for each link */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Change the color of links when hovered over */
+nav a:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
 .dropdown {
     border-radius: 5px;
     text-align: center;
