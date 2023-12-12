@@ -6,7 +6,7 @@
         <title>Data Analysis</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
+        <script src="tableau.js"></script>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KoHo">
     </head>
@@ -23,40 +23,30 @@
             </nav>
         </div>
         <br>
-        <div class="dropdown">
-            <label for="userInput">Enter movie title:</label>
-            <input type="text" id="userInput" list="optionsList">
-            <span class="error-message" id="errorMessage"></span>
-            <!-- Define the list of options -->
-            <datalist id="optionsList">
-                <option value="Option 1">
-                <option value="Option 2">
-                <option value="Option 3">
-                <!-- Add more options as needed -->
-            </datalist>
-        </div>
-        <br>
-        <div class="movie-recs">
-            <h3>Movie recommendations:</h3>
-            <table>
-                  <tr>
-                    <th>MOVIE</th>
-                    <th>GENRE</th>
-                    <th>AVERAGE RATING</th>
-                  </tr>
-                  <tr>
-                    <td>Movie1</td>
-                    <td>Genre1</td>
-                    <td>Avg rating1</td>
-                  </tr>
-                  <tr>
-                    <td>Movie2</td>
-                    <td>Genre2</td>
-                    <td>Avg rating2</td>
-                  </tr>
-            </table>
+        <div class='tableau' id='viz1702344927565' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Movies ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;Movies_17019978809680&#47;Story1&#47;1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> 
+                <param name='site_root' value='' />
+                <param name='name' value='Movies_17019978809680&#47;Story1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;Movies_17019978809680&#47;Story1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object>
         </div>
     </body>
     
-    <script src="script.js"></script>
+    <script src="tableau.js"></script>
 </html>
