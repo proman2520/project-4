@@ -102,6 +102,7 @@ def getrecs(movie):
             return print('There are not enough ratings for this movie.')
     else:
         return print('You get nothing you lose. Good day Sir!')
+    
 # Example usage of getrecs
 getrecs('The other Guy')
 getrecs('The Other Guys')
