@@ -113,9 +113,12 @@ getrecs('Harry Potter and the Chamber of Secrets')
 getrecs('Up')
 getrecs('Avatar')
 getrecs('Despicable Me')
+
 # Remove duplicates in dataset so that it doesn't return an unexpected result? Getrecs('The Avengers') returns a movie from 1998.**
 getrecs('the avengers')
 getrecs('Django Unchained')
 getrecs('Moana')
 getrecs('Batman')
+
+getrecs('The Dark Knight')
 
