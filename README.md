@@ -32,6 +32,11 @@ For project 4, we decided to build a movie recommender. After entering a movie t
 - Tableau for visualizing metrics of our source data
 - HTML and CSS for building a website
 
+## Final note
+Here is our repository for Project-4, in which we create an item-based collaborative filtering model to recommend 10 movies based on the movie of your choice from our dataset. The model is in working order, the plots render correctly, and our SQL database utilizes Google Cloud and the Python library SQLalchemy to share, manipulate, and utilize the data properly. The web UI properly explains our process in making the model and embeds the data's list of movies and our Tableau visualizations based on the dataset. The only non-functioning part of our project currently is the Flask app, which we would have used to spawn movie recommendations on the homepage of the web UI if we had more time. Fortunately, that is not a requirement of the project, but would have been a welcome addition with more time.
+
+Thank you for grading and for a wonderful program which served to expand our portfolios, technical skills, and digital literacy. Cheers.
+
 ## Links
 - Presentation: https://docs.google.com/presentation/d/1Lbg7oBn1TbQ5cX5So62mfE0Ae1lRmkOiqJ8aCpcrP2Q/edit#slide=id.gc6f889893_0_0
 - Tableau story link: https://public.tableau.com/app/profile/shaji.qurashi/viz/Movies_17019978809680/Story1?publish=yes
