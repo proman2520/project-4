@@ -1,5 +1,9 @@
 # project-4
 
+Here is our repository for Project-4, in which we create an item-based collaborative filtering model to recommend 10 movies based on the movie of your choice from our dataset. The model is in working order, the plots render correctly, and our SQL database utilizes Google Cloud and the Python library SQLalchemy to share, manipulate, and utilize the data properly. The web UI properly explains our process in making the model and embeds the data's list of movies and our Tableau visualizations based on the dataset. The only non-functioning part of our project currently is the Flask app, which we would have used to spawn movie recommendations on the homepage of the web UI if we had more time. Fortunately, that is not a requirement of the project, but would have been a welcome addition with more time.
+
+Thank you for grading and for a wonderful program which served to expand our portfolios, technical skills, and digital literacy. Cheers.
+
 * SQL (Postgres/AWS/Databricks tbd) for storing the data in a relational database
 * HTML/CSS as a UI for input and response
 * Javascript Plotly and Python Pandas for graphing the correlations

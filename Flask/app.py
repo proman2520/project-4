@@ -53,7 +53,7 @@ print(Base.classes.keys())
 #################################################
 # Flask Routes
 #################################################
-@app.route("/")
+@app.route("/api/<movie>")
 def getrecs(movie):
     # Load movies and ratings data
     movies = pd.read_csv('../Predictive model data/movies_title_reformatted.csv')

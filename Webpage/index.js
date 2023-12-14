@@ -1,5 +1,15 @@
 // script.js
 
+// //Translate the json to a variable
+// const url = "http://127.0.0.1:5000/api/all_data"
+// let data; // Store the fetched data
+
+// // Fetch the JSON data and call init when done
+// d3.json(url).then(function(fetchedData) {
+//     data = fetchedData;
+//     init();
+// });
+
 // For index.html
 var userInput = document.getElementById('userInput');
 var errorMessage = document.getElementById('errorMessage');
