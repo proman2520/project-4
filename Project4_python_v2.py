@@ -61,10 +61,11 @@ def getrecs(movie):
 
     if movie_df.empty:
         print("\nPlease check the spelling of the movie title or the movie may not be in our database :(\n\nFollow this link to see the full list of movies available: https://docs.google.com/spreadsheets/d/1-_oqIpZ-js-mNv4SZIQLrtcT56I7oiiYRLaEdJBaSos/edit#gid=0")
-        return None  # Return None if the movie is not found
+        # Return None if the movie is not found
+        return None  
 
     movie_id = movies.loc[mask, 'movieId'].values
-    movie_name = str(movie_df.values[0])  # Convert to string
+    movie_name = str(movie_df.values[0])
 
     if len(movie_id) > 0:
         movie_id = movie_id[0]
@@ -92,10 +93,12 @@ def getrecs(movie):
             return rec_df
         else:
             print('\nThere are not enough ratings for this movie.')
-            return None  # Return None if there are not enough ratings for this movie
+            # Return None if there are not enough ratings for this movie
+            return None  
     else:
         print('\nYou get nothing you lose. Good day Sir!')
-        return None  # Return None if movie_id is empty
+        # Return None if movie_id is empty
+        return None  
 
 def get_user_input():
     return input("\nEnter a movie title or type 'exit' if you're done: ")
