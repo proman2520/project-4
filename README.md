@@ -1,7 +1,6 @@
 # project-4 - Recommended for you and by you
 
-What is item-based collaborative filtering? 
-“Item based collaborative filtering was introduced 1998 by Amazon[6]. Unlike user based collaborative filtering, item based filtering looks at the similarity between different items, and does this by taking note of how many users that bought item X also bought item Y. If the correlation is high enough, a similarity can be presumed to exist between the two items, and they can be assumed to be similar to one another.”
+What is item-based collaborative filtering? “Item based collaborative filtering was introduced 1998 by Amazon[6]. Unlike user based collaborative filtering, item based filtering looks at the similarity between different items, and does this by taking note of how many users that bought item X also bought item Y. If the correlation is high enough, a similarity can be presumed to exist between the two items, and they can be assumed to be similar to one another.”
 
 * SQL (Postgres/AWS/Databricks tbd) for storing the data in a relational database
 * HTML/CSS as a UI for input and response
